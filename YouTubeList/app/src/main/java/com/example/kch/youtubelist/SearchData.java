@@ -9,6 +9,7 @@ public class SearchData {
     String title;
     String url;
     String publishedAt;
+    String kind;
 
     public SearchData(String videoId, String title, String url, String publishedAt) {
         super();
@@ -34,6 +35,8 @@ public class SearchData {
         return publishedAt;
     }
 
+    public String getChannel() { return kind; }
+
     public void setVideoId(String videoId) {
         this.videoId = videoId;
     }
@@ -50,5 +53,7 @@ public class SearchData {
         this.publishedAt = publishedAt;
     }
 
-
+    public void setChannel(String channel) {
+        this.kind = channel;
+    }
 }
